@@ -67,5 +67,6 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "PiggyVentura-main.slnx"
+    "dotnet.defaultSolution": "PiggyVentura.slnx",
+    "python-envs.defaultEnvManager": "ms-python.python:system"
 }
