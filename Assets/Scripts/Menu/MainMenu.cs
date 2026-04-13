@@ -27,4 +27,9 @@ public class MainMenu : MonoBehaviour
       SceneManager.LoadScene("Nivel_1"); //Carga la primera escena
    }
 
+   public void GoToCredits()
+   {
+       SceneManager.LoadScene("Creditos");
+   }
+
 }
