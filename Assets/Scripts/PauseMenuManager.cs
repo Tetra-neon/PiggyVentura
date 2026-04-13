@@ -7,7 +7,7 @@ public class PauseMenuManager : MonoBehaviour
     public GameObject pauseButton; // Variable para el botón de pausa
     void Update() 
 {
-    if (Input.GetKeyDown(KeyCode.Escape)) // Detecta si se presiona la tecla "Escape"
+    if (Input.GetKeyDown(KeyCode.Escape)) // ESC alterna pausa
     {
         if (Time.timeScale == 1)
             PauseGame();
@@ -34,10 +34,15 @@ public class PauseMenuManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Recarga la escena actual para reiniciar el juego
         Time.timeScale = 1; // Asegura que el tiempo del juego esté en marcha
     }
+    public void GoToMainMenu()
+{
+    Time.timeScale = 1; // Asegura que el tiempo del juego esté en marcha antes de cambiar de escena
+    SceneManager.LoadScene("MainMenu");
+}
 
     public void QuitGame()
     {
-        Debug.Log("Close Game"); // Mensaje de depuración para confirmar que se ha llamado a la función
+        Debug.Log("Saliendo del juego"); // Mensaje de depuración para confirmar que se ha llamado a la función
         Application.Quit(); // Cierra la aplicación
     }
 }
