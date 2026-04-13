@@ -2987,6 +2987,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c2fd8ff4bef0b44d8c4f1a48afbacfc, type: 3}
+--- !u!114 &981561477 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 904207246236397349, guid: 12e32f16514e79946aa5e8d61a8d5430, type: 3}
+  m_PrefabInstance: {fileID: 82503243}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1001 &1124471104
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3618,7 +3629,7 @@ PrefabInstance:
     - target: {fileID: 8220328096882061050, guid: 15b1563fdae595a48a583fe2fe803031, type: 3}
       propertyPath: frutasText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 981561477}
     - target: {fileID: 8220328096882061050, guid: 15b1563fdae595a48a583fe2fe803031, type: 3}
       propertyPath: audioSource
       value: 

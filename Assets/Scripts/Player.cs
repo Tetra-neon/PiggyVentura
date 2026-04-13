@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     public float groundCheckRadius = 0.1f; //Variable para el radio de comprobación del suelo
     public LayerMask groundLayer; //Variable para la capa del suelo
     private Animator animator; //Variable para el componente de animación del cerdito
-    private int frutas; //Variable para contar las frutas que el cerdito ha recogido
+    //private int frutas; //Variable para contar las frutas que el cerdito ha recogido
     public TMP_Text frutasText; //Variable para mostrar el número de frutas recogidas
     public AudioSource audioSource; //Variable para el sonido
     public AudioClip frutaClip; //Variable para el sonido de la fruta
@@ -25,6 +25,7 @@ public class Player : MonoBehaviour
     {
         rb2D = GetComponent<Rigidbody2D>(); //para poder acceder al componente dentro de unity
         animator = GetComponent<Animator>(); //para poder acceder al componente de animación dentro de unity
+        frutasText.text = GameManager.instance.frutas.ToString(); //para mostrar el número de frutas recogidas
     }
 
     void Update()
@@ -54,8 +55,8 @@ public class Player : MonoBehaviour
         {
             audioSource.PlayOneShot(frutaClip);
             Destroy(collision.gameObject); //para destruir la fruta si el cerdito colisiona con ella
-            frutas++; //para aumentar el contador de frutas recogidas
-            frutasText.text = frutas.ToString(); //para actualizar el texto que muestra el número de frutas recogidas
+            GameManager.instance.frutas++;
+            frutasText.text = GameManager.instance.frutas.ToString();
         }
 
         if (collision.transform.CompareTag("Puas")) //para comprobar si el cerdito colisiona con las puas
