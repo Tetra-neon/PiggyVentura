@@ -67,10 +67,7 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-<<<<<<< Updated upstream
-    "dotnet.defaultSolution": "PiggyVentura-main.slnx",
-    "python-envs.defaultEnvManager": "ms-python.python:system"
-=======
-    "dotnet.defaultSolution": "PiggyVentura-main.slnx"
->>>>>>> Stashed changes
+    "<<<<<<<Updatedupstreamdotnet.defaultSolution": "PiggyVentura-main.slnx",
+    "ms-python.python:system=======dotnet.defaultSolution": "PiggyVentura-main.slnx>>>>>>>Stashedchanges",
+    "dotnet.defaultSolution": "PiggyVentura.slnx"
 }
